@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style>
+		td p {
+			color: red;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color:Red"><center>Đăng nhập</center></h1>
+	<form style="display:flex; justify-content:center;" action="xulydangnhap.php" method="POST" onsubmit="return CheckLogin()" enctype="multipart/form-data">
+	<div style="padding:10px">
+		<table cellspacing="7" cellpadding="10">
+			<tr>
+				<td>Tên đăng nhập</td>
+				<td><input type="text" id="tendangnhap" name="tendangnhap"></td>
+			</tr>
+			<tr>
+			    <td></td>
+			    <td><p id="name_not"></p></td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td><input type="password" id="matkhau" name="matkhau"></td>
+			</tr>
+			<tr>
+			    <td></td>
+			    <td><p id="pass_not"></p></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="dangky" value="Đồng ý">
+				</td>
+			</tr>
+
+		</table>
+
+	</div>
+	</form>
+	<script>
+		function CheckLogin() {
+		check = true;
+		var name = document.getElementById('tendangnhap');
+		var pass = document.getElementById('matkhau');
+		if (name.value == "") {
+		    name_not.innerHTML = "Vui lòng nhập tên đăng nhập !";
+		    check = false;
+		}
+		else{
+			name_not.innerHTML = "";
+		}
+		if (pass.value == "") {
+		    pass_not.innerHTML = "Vui lòng nhập mật khẩu !";
+		    check = false;
+			}
+		else{
+			pass_not.innerHTML = "";
+		}
+		return check;
+	}
+	</script>	
+	
+</body>
+</html>

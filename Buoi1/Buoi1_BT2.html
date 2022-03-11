@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	<h1 style="color:Red"><center>Đăng kí tài khoản mới</center></h1>
+	<p><center>Vui lòng điền đẩy đủ thông tin bên dưới để đăng kí tài khoản mới</center></p>
+	<form style="display:flex; justify-content:center;">
+	<div style="border:1px solid black; padding:10px">
+		<table style="background-color:lightgray;" cellspacing="7" cellpadding="10">	
+			<tr>
+				<td>Tên đăng nhập</td>
+				<td><input type="text" name="tendangnhap"></td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td><input type="password" name="matkhau"></td>
+			</tr>
+			<tr>
+				<td>Gõ lại mật khẩu</td>
+				<td><input type="password" name="matkhau2"></td>
+			</tr>
+			<tr>
+				<td>Hình đại diện</td>
+				<td><input type="file" name="hinhdaidien"></td>
+			</tr>
+			<tr>
+				<td>Giới tính</td>
+				<td>
+					<label><input type="radio" name="gioitinh" id="nam">Nam</label>
+					<label><input type="radio" name="gioitinh" id="nu">Nữ</label>
+					<label><input type="radio" name="gioitinh" id="khac">Khác</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+					<td>
+						<select name="nghenghiep">
+							<option value="hocsinh">Học Sinh</option>
+							<option value="sinhvien">Sinh Viên</option>
+							<option value="giaovien">Giáo Viên</option>
+							<option value="khac">Khác</option>
+					</td>
+			</tr>
+			<tr>
+				<td>Sở thích</td>
+				<td>
+					<label><input type="checkbox" name="sothich[]">Thể thao</label>
+					<label><input type="checkbox" name="sothich[]">Du lịch</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>			
+					<label><input type="checkbox" name="sothich[]">Âm nhạc</label>
+					<label><input type="checkbox" name="sothich[]">Thời trang</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="dangky" value="Đăng ký">
+					<input type="reset" name="lamlai" value="Làm lại">
+				</td>
+			</tr>
+		</table>
+	</div>
+	</form>
+	<br>
+	<div align="center">
+		<button onclick="goBack()">Quay về trang trước</button>
+	</div>
+	<script>
+		function goBack() {
+		  window.history.back();
+		}
+	</script>	
+</body>
+</html>

@@ -1,0 +1,61 @@
+a{
+  text-decoration: none;
+  color: blue;
+  font-size: 20px;
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  color: green;
+}
+.iconn{
+  width: 50px;
+}
+.mySlides{
+  width: auto;
+  height: 250px;
+  margin: auto;
+}
+th, td{
+  text-align: center;
+  width: 200px;
+  height: 50px;
+}
+td img{
+  width: 100px;
+}
+table{
+  width: 80%;
+  margin-top: 10px;
+}
+.txt{
+    font-size: 16px;
+}
+
+.bangdssp{
+  border: 1px solid red;
+  border-collapse: collapse;
+}
+.bangdssp td{
+  border: 1px solid red;
+}
+.bangdssp th{
+  border: 1px solid red;
+  background-color: lightgrey;
+}
+.popup_image{
+  width: auto;
+  height: 250px;
+}
+a:hover{
+  color: red;
+}
+a:hover{
+  color: red;
+}

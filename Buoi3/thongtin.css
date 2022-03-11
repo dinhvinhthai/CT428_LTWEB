@@ -1,0 +1,32 @@
+a{
+  text-decoration: none;
+  color: blue;
+  font-size: 25px;
+} 
+h1{
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+table{
+  margin-top: 10px;
+  width: 50%;
+}
+.bang{
+  font-size: 20px;
+  border: 1px solid red;
+  background-color: lightgrey;
+  height: 220px;
+}
+.ttcn{
+  border-bottom: 1px solid red;
+}
+p{
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+
+a:hover{
+  color: red;
+}
