@@ -1,224 +1,218 @@
-*{
-  margin: 0px;
-  padding: 0px;
+*{ 
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
- background-color: gray;
- font-family: arial;
-}
-a{
-  text-decoration: none;
-  color: blue;
-}
-p{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 17px;
-}
-#home{
-  display: flex;
-}
-#mainmenu{
-  position: fixed; /* Set the navbar to fixed position */
-  width: 12%;
-  top: 30%;
-}
-#mainmenu img{
-  width: 35%;
-  margin: 10px 0;
-}
-#mainmenu ul li{
-  margin: 10px;
-  text-align: center;
-  list-style-type: none;
-}
-#wrap{
-  border: 7px solid white;
-  width: 75%;
+  width: 80%;
   margin: auto;
+  background-color: darkgray;
+}
+#wapper{
   background-color: white;
 }
 #header{
-  border: 1px solid black;
-  height: 90px;
-  width: 100%;
+  display: flex;
+  height: 100px;
+  text-align: center;
   background-color: black;
 }
 #header h1{
   font-size: 35px;
-  text-align: center;
-  margin: 25px;
-  color: white;
-}
-#menu{
-  width: 100%;
-  height: 20px;
-  margin-top: 10px;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 10px;
-  color: white;
-  float: left;
-}
-#menu ul{
-  width: 100%;
   margin: auto;
+  width: max-content;
+  color: white;
 }
-#menu ul li{
+#navbar{
+  height: 35px;
+  display: flex;
+  margin: 15px auto;
+  text-align: center;
   background-color: black;
-  float: left;
-  text-align: center;
-  list-style-type: none;
-  width: 20%;
 }
-#menu ul li p{
-  border: 1px solid white;
-  margin: auto;
-  font-size: 19px;
-}
-#menu ul li a{
-  text-align: left;
-  font-size: 15px;
-  height: 25px;
+#navbar a{
+  font-size: 18px;
   font-weight: 500;
   margin: auto;
-}
-#menu ul li ul li{
-  display: none;
-  background-color: black;
-  min-width: 100%;
-}
-#menu ul li ul li a{
-  color: white;
   text-decoration: none;
-  display: block;
-  margin: auto;
-}
-#menu ul li:hover{
-  background-color: blue;
-  color: black;
-}
-#menu ul li a:hover{
-  background-color: red;
+  width: 100%;
   color: white;
-}
-#menu ul li:hover li{
-  display: block;
 }
 
-#intro{
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin-top: 40px;
-}
-#intro p{
-  width: 80%;
-  text-align: justify;
-  margin: auto;
-  margin-top: 10px;
-  text-indent: 5%;
-}
-#intro img{
-  width: 25%;
-  display: block;
-  margin-top: 10px; 
-  margin-left: auto;
-  margin-right: auto;
-}
-#intro h1{
-  font-size: 30px;
-}
-#bio{
-  width: 80%;
-  height: max-content;
-  margin: auto;
-  text-align: justify;
-}
-#bio .bio-text{
-  border-top: 1px solid black;
-}
-#bio h1{
-  font-size: 30px;
-  text-align: center;
-}
-#bio p{
-  text-indent: 5%;
-}
-#work{  
-  width: 70%;  
-  margin: auto;
-}
-#work .work-text{
-  border-top: 1px solid black;
-}
-#work h1{
-  text-align: center;
-}
-#work h3{
-  margin: 15px;
-  text-align: center;
-  margin: 20px 0;
-}
-#work table{
-  width: 100%;
-  margin: auto;
-}
-#work tr td{
-  text-align: center;
-  width: 200px;
-}
-#work img{
+#navbar a:hover{
+  cursor: pointer;
+  color: black;
+  background-color: white;
   border: 1px solid black;
-  height: 250px;
-  width: 150px;
 }
-#work a:hover{
+
+#navbar-icon{
+  height: 35px;
+  display: none;
+  margin: 15px auto;
+  text-align: center;
+  background-color: black;
+}
+#navbar-icon a{
+  width: 25%;
+  margin: auto;
+}
+#navbar-icon a i{
+  font-size: 25px;
+  width: 100%;
+  color: white;
+}
+#navbar-icon a i:hover{
+  color: black;
+  background-color: white;
+}
+#content{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+#content h3{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#content .content-intro img{
+  width: 30%;
+}
+
+.content-intro p, .content-bio p{
+  text-align: justify;
+  font-size: 18px;
+  text-indent: 35px;
+  margin: 10px 0;
+}
+.content-books h5{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.row{
+  display: flex;
+  text-align: center;
+  margin: 5px auto;
+}
+.book{
+  margin: auto;
+  width: 300px;
+  margin: 5px auto;
+}
+.book-img img{
+  height: 250px;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+.book-name a{
+  text-decoration: none;
+  font-size: 18px;
+  color: blue;
+}
+.book-name a:hover{
+  font-weight: 600;
   color: red;
 }
-.namework{
+.ct428 h1{
+  font-size: 35px;
   text-align: center;
-  font-size: 15px;
-  height: 70px;
+  margin: 25px 0;
+}
+.ct428 table{
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.ct428 table th{
+  font-size: 22px;
+  width: 300px;
+  border: 1px solid black;
+}
+.ct428 table td{
+  height: 150px;
+  width: 300px;
+  border: 1px solid black;
+}
+.ct428 table tr td a{
+  color: black;
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.ct428 table tr td a:hover{
+  color: blue;
 }
 #footer{
+  margin: auto;
   background-color: black;
   color: white;
-}
-#footer table{
-  width: 60%;
-  margin: auto;
-}
-#footer tr td{
-    width: 40%;
-    height: 40px;
-    font-weight: bold;
-    margin-left: 100px;
-}
-#footer tr th{
-    height: 50px;
-}
-#footer img{
-  width: 7%;
-  vertical-align: middle;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 5px;
 }
 
-#myBtn:hover {
-  background-color: black;
+#footer table{
+  margin: auto;
+}
+
+#footer table th{
+  font-size: 16px;
+  border-bottom: 1px solid white;
+}
+#footer table td{
+  font-size: 16px;
+  margin: auto;
+  display: flex;  
+  border-bottom: 1px solid white;
+}
+#footer table tr td p{
+  width: max-content;
+  text-align: left;
+  margin: 10px 30px;
+}
+#footer p{
+  text-align: center;
+}
+#footer p a i{
+  color: white;
+}
+#footer p a i:hover{
+  color: blue;
+}
+
+.content-bio ,.content-books, .ct428{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  body{
+    width: 100%;
+  }
+  #footer table tr td p{
+    margin: 10px 10px;
+  }#navbar{
+    display: none;
+  }
+  #navbar-icon{
+    display: flex;
+  }
+  #footer table td{
+    display: block;
+  }
+  .row{
+    display: block;
+  }
+  .ct428{
+    width: 90%;
+    margin: auto;
+  }
+  .ct428 h1{
+    font-size: 25px;
+  }
+  .ct428 table tr th{
+    font-size: 16px;
+  }
+  .ct428 table tr td a{
+    font-size: 15px;
+    height: max-content;
+  }
+
 }
 
