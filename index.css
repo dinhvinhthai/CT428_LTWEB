@@ -3,6 +3,9 @@
   padding: 0;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
   width: 80%;
   margin: auto;
@@ -24,6 +27,7 @@ body{
   color: white;
 }
 #navbar{
+  overflow: hidden;
   height: 35px;
   display: flex;
   margin: 15px auto;
@@ -66,19 +70,43 @@ body{
   color: black;
   background-color: white;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+.sticky2 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 62px;
+}
+.sticky2 + .content {
+  padding-top: 62px;
+}
+
 #content{
   text-align: center;
   width: 80%;
   margin: auto;
 }
-#content h3{
-  font-size: 30px;
-  margin-bottom: 10px;
-}
 #content .content-intro img{
   width: 30%;
 }
-
+#bio h1{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+#books h1{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
 .content-intro p, .content-bio p{
   text-align: justify;
   font-size: 18px;
@@ -116,7 +144,8 @@ body{
 .ct428 h1{
   font-size: 35px;
   text-align: center;
-  margin: 25px 0;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 .ct428 table{
   border: 1px solid black;
@@ -178,17 +207,16 @@ body{
   color: blue;
 }
 
-.content-bio ,.content-books, .ct428{
-  display: none;
-}
 @media screen and (max-width: 768px) {
   body{
     width: 100%;
   }
   #footer table tr td p{
     margin: 10px 10px;
-  }#navbar{
+  }
+  #navbar{
     display: none;
+    margin: 0px;
   }
   #navbar-icon{
     display: flex;
